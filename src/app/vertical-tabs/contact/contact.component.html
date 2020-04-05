@@ -1,0 +1,22 @@
+<div class="container-contact__mainText">
+  <div class="col xl 12">
+    <h1>{{ text }}</h1>
+  </div>
+</div>
+
+<hr />
+
+<div class="container">
+  <ul class="container-contact__lists">
+    <li class="container-contact__listItems" *ngFor="let item of items">
+      <div id="{{ item.hover }}">
+        <a href="{{ item.url }}"
+          ><img class="container-contact__images" src="{{ item.image }}"
+        /></a>
+      </div>
+      <div id="{{ item.stuff }}">
+        <p>{{ item.text }}</p>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,21 @@
+@import "../../styles/animations";
+
+.container-contact {
+  &__mainText {
+    text-align: center;
+  }
+  &__lists {
+    list-style: none outside;
+    animation: slide-in 0.3s ease 1 both;
+  }
+  &__listItems {
+    padding-right: 5%;
+    float: left;
+  }
+  &__images {
+    height: 100px;
+    width: 100px;
+    max-width: 100%;
+    max-height: auto;
+  }
+}

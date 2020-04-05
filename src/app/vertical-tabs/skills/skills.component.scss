@@ -1,0 +1,24 @@
+@import "../../styles/animations";
+
+.container-skills {
+  &__mainText {
+    text-align: center;
+  }
+  &__secondText {
+    padding-bottom: 5%;
+  }
+  &__lists {
+    display: inline;
+    list-style: none outside;
+    animation: slide-in 0.3s ease 1 both;
+  }
+  &__listItems {
+    float: left;
+  }
+  &__images {
+    max-width: 55px;
+    max-height: 55px;
+    padding-right: 5%;
+    padding-bottom: 8%;
+  }
+}

@@ -1,0 +1,9 @@
+@import "../../styles/animations";
+
+.container-aboutMe {
+  &__lists {
+    display: inline;
+    list-style: none outside;
+    animation: slide-in 0.3s ease 1 both;
+  }
+}

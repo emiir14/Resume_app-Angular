@@ -1,0 +1,32 @@
+<div class="container-skills">
+  <h1 class="container-skills__mainText">Current Skills</h1>
+  <h5 class="container-skills__secondText">
+    My programming and english knowledge comes from self taught learning, a lot
+    of google and several courses on Udemy, my first one was The Web Developer
+    Bootcamp by Colt Steele, and from then i couldn't stop. Mostly i have worked
+    in:
+  </h5>
+  <div class="row">
+    <div class="col 2"></div>
+    <div class="col-4">
+      <ul class="container-skills__lists">
+        <li *ngFor="let item of technologies; let i = index">
+          <h5>{{ item }}</h5>
+        </li>
+      </ul>
+    </div>
+    <div class="col-5">
+      <div class="row">
+        <ul class="container-skills__lists">
+          <li
+            class="container-skills__listItems"
+            *ngFor="let item of images; let i = index"
+          >
+            <img class="container-skills__images" src="{{ item }}" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col 2"></div>
+  </div>
+</div>
