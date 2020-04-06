@@ -9,6 +9,7 @@ import { AboutMeComponent } from './vertical-tabs/about-me/about-me.component';
 import { SkillsComponent } from './vertical-tabs/skills/skills.component';
 import { ContactComponent } from './vertical-tabs/contact/contact.component';
 import { ProfilePicComponent } from './vertical-tabs/about-me/profile-pic/profile-pic.component';
+import { EmailFormComponent } from './vertical-tabs/contact/email-form/email-form.component';
 
 @NgModule({
   imports: [BrowserModule, BrowserAnimationsModule, FormsModule],
@@ -19,6 +20,7 @@ import { ProfilePicComponent } from './vertical-tabs/about-me/profile-pic/profil
     SkillsComponent,
     ContactComponent,
     ProfilePicComponent,
+    EmailFormComponent,
   ],
   bootstrap: [AppComponent],
 })
