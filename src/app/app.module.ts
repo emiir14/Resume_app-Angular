@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,7 +15,14 @@ import { ProfilePicComponent } from './vertical-tabs/about-me/profile-pic/profil
 import { EmailFormComponent } from './vertical-tabs/contact/email-form/email-form.component';
 
 @NgModule({
-  imports: [BrowserModule, BrowserAnimationsModule, FormsModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    RouterModule.forRoot([{ path: 'contact', component: EmailFormComponent }]),
+  ],
   declarations: [
     AppComponent,
     VerticalTabsComponent,

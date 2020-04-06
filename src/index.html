@@ -17,6 +17,18 @@
   </head>
   <body>
     <app-root></app-root>
+    <form
+      name="contact"
+      subject="A Message From Personal Website"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="art" />
+      <textarea name="message"></textarea>
+    </form>
   </body>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://jacoblett.github.io/bootstrap4-latest/bootstrap-4-latest.min.js"></script>
