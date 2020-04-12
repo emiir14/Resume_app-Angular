@@ -4,9 +4,10 @@
   float: left;
   overflow: hidden;
   margin: 10px 1%;
-  min-width: 320px;
-  max-width: 480px;
-  max-height: 360px;
+  min-width: 220px;
+  min-height: 200px;
+  max-width: 430px;
+  max-height: 330px;
   text-align: center;
   cursor: pointer;
 }
@@ -21,7 +22,7 @@
 
 .grid figure figcaption {
   padding: 2em;
-  color: #fff;
+  color: #333;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -51,15 +52,8 @@
 
 .grid figure p {
   padding-top: 70%;
-}
-
-.grid figure p {
   letter-spacing: 2px;
 }
-
-/*---------------*/
-/***** Layla *****/
-/*---------------*/
 
 figure.effect-layla img {
   height: 390px;

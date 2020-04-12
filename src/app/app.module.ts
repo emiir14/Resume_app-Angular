@@ -13,6 +13,7 @@ import { SkillsComponent } from './vertical-tabs/skills/skills.component';
 import { ContactComponent } from './vertical-tabs/contact/contact.component';
 import { ProfilePicComponent } from './vertical-tabs/about-me/profile-pic/profile-pic.component';
 import { EmailFormComponent } from './vertical-tabs/contact/email-form/email-form.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import { EmailFormComponent } from './vertical-tabs/contact/email-form/email-for
     ContactComponent,
     ProfilePicComponent,
     EmailFormComponent,
+    NavbarComponent,
   ],
   bootstrap: [AppComponent],
 })

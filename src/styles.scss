@@ -1,11 +1,27 @@
+:root {
+  --bg-color: #eeeeee;
+  --text-color: #333;
+  }
+
 html,
 body {
   height: 100%;
-  background: #e2e1e0;
+  background: var(--bg-color);
 }
 body {
   margin: 0;
   font-family: "Baloo Thambi 2", cursive;
-  color: #333;
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
   text-shadow: 4px 4px 4px #aaa;
+}
+
+@media only screen and (max-width: 600px) {
+  html, body {
+    max-width: 400px;
+    font-size: 0.8em; 
+    overflow-x: hidden;
+  }
 }
