@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { ThemeService } from './theme.service';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,7 +14,6 @@ import { SkillsComponent } from './vertical-tabs/skills/skills.component';
 import { ContactComponent } from './vertical-tabs/contact/contact.component';
 import { ProfilePicComponent } from './vertical-tabs/about-me/profile-pic/profile-pic.component';
 import { EmailFormComponent } from './vertical-tabs/contact/email-form/email-form.component';
-import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   imports: [
@@ -32,8 +32,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     ContactComponent,
     ProfilePicComponent,
     EmailFormComponent,
-    NavbarComponent,
   ],
   bootstrap: [AppComponent],
+  providers: [ThemeService]
 })
 export class AppModule {}

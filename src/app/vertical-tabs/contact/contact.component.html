@@ -9,27 +9,30 @@
 <hr />
 
 <div class="container">
-  <ul class="container-contact__lists">
-    <li class="container-contact__listItems" *ngFor="let item of items">
-      <div id="{{ item.hover }}">
-        <a href="{{ item.url }}"
-          ><img class="container-contact__images" src="{{ item.image }}"
-        /></a>
-      </div>
-      <div id="{{ item.stuff }}">
-        <p>{{ item.text }}</p>
-      </div>
-    </li>
-  </ul>
+  <div class="row">
+    <div class="col-12">
+      <ul class="container-contact__lists">
+        <li class="container-contact__listItems" *ngFor="let item of items">
+          <div id="{{ item.hover }}">
+            <a href="{{ item.url }}"
+              ><img class="container-contact__images" src="{{ item.image }}"
+            /></a>
+          </div>
+          <div id="{{ item.stuff }}">
+            <p>{{ item.text }}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <p>Previous project: <a href="">https://cv-emir-ale.herokuapp.com/</a></p>
+    </div>
+  </div>
 </div>
 
-<input id="dark-mode-toggle" type="checkbox">
-
-<main>
-  <h1>CSS DARK MODE</h1>
-  <label class="dark-mode-btn" for="dark-mode-toggle">
-    <img src="https://i.imgur.com/gEE0Mge.png">
-  </label>
-</main>
 
 <app-email-form></app-email-form>
+
+

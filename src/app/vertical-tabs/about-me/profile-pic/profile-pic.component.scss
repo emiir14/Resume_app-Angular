@@ -1,13 +1,12 @@
 /* Common style */
 .grid figure {
   position: relative;
-  float: left;
   overflow: hidden;
   margin: 10px 1%;
   min-width: 220px;
-  min-height: 200px;
-  max-width: 430px;
-  max-height: 330px;
+  min-height: 180px;
+  max-width: 390px;
+  max-height: 320px;
   text-align: center;
   cursor: pointer;
 }
@@ -17,7 +16,6 @@
   display: block;
   min-height: 100%;
   max-width: 100%;
-  opacity: 0.8;
 }
 
 .grid figure figcaption {
@@ -26,11 +24,6 @@
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-  pointer-events: none;
 }
 
 .grid figure figcaption,
@@ -43,7 +36,6 @@
 }
 
 .grid figure figcaption > a {
-  z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
   font-size: 0;
@@ -53,10 +45,6 @@
 .grid figure p {
   padding-top: 70%;
   letter-spacing: 2px;
-}
-
-figure.effect-layla img {
-  height: 390px;
 }
 
 figure.effect-layla figcaption::before,
@@ -100,11 +88,6 @@ figure.effect-layla p {
   transform: translate3d(0, -10px, 0);
 }
 
-figure.effect-layla img {
-  -webkit-transform: translate3d(0, -30px, 0);
-  transform: translate3d(0, -30px, 0);
-}
-
 figure.effect-layla img,
 figure.effect-layla figcaption::before,
 figure.effect-layla figcaption::after,
@@ -114,7 +97,7 @@ figure.effect-layla p {
 }
 
 figure.effect-layla:hover img {
-  opacity: 0.7;
+  opacity: 0.9;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
@@ -139,8 +122,6 @@ figure.effect-layla:hover img {
   transition-delay: 0.15s;
 }
 
-@media screen and (max-width: 50em) {
-  .grid figure {
-    width: 100%;
-  }
+figure.effect-layla img {
+  height: auto;
 }
