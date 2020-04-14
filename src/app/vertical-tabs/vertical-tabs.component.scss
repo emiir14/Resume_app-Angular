@@ -8,6 +8,7 @@
   left: 0;
   bottom: 0;
   right: 0;
+  background: var(--background-color);
 }
 
 .border1 {
@@ -18,6 +19,11 @@
 .nav-tabs {
   display: none;
   padding-top: 3%;
+}
+
+.card-body {
+  border: none;
+  background: var(--background-color);
 }
 
 @media (min-width: 468px) {
@@ -58,7 +64,6 @@
 
   .card {
     border: none;
-    background: var(--background-color);
   }
 
   .card .card-header {
@@ -74,9 +79,5 @@
   .tab-pane {
     display: block !important;
     opacity: 1;
-  }
-  .card {
-    border: none;
-    background: var(--background-color);
   }
 }

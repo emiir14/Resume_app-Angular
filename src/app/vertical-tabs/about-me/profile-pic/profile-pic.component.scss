@@ -1,19 +1,11 @@
-/* Common style */
 .grid figure {
   position: relative;
   overflow: hidden;
-  margin: 10px 1%;
-  min-width: 220px;
-  min-height: 180px;
-  max-width: 390px;
-  max-height: 320px;
   text-align: center;
   cursor: pointer;
 }
 
 .grid figure img {
-  position: relative;
-  display: block;
   min-height: 100%;
   max-width: 100%;
 }
@@ -124,4 +116,5 @@ figure.effect-layla:hover img {
 
 figure.effect-layla img {
   height: auto;
+  filter: var(--img-darkening);
 }
