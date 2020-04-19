@@ -1,13 +1,23 @@
 <div class="container">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="#"></a>
-          <label for="darkTheme">
-            <img class="toggleImgSource"/>
-          </label>
-          <input id="darkTheme" type="checkbox" [formControl]="darkTheme">
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div class="mx-auto">
+      <!-- <label for="darkTheme">
+      <img class="toggleImgSource"/>
+      </label>
+      <input id="darkTheme" type="checkbox" [formControl]="darkTheme"> -->
+      <div class="toggle toggle--daynight">
+        <input
+          [formControl]="darkTheme"
+          type="checkbox"
+          id="toggle--daynight darkTheme"
+          class="toggle--checkbox"
+        />
+        <label class="toggle--btn" for="toggle--daynight darkTheme"
+          ><span class="toggle--feature"></span
+        ></label>
+      </div>
+    </div>
+  </nav>
 </div>
 
 <app-vertical-tabs></app-vertical-tabs>

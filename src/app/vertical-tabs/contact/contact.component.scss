@@ -14,16 +14,24 @@
     float: left;
   }
   &__images {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     max-width: 100%;
     max-height: auto;
   }
 }
 
-@media (min-width: 468px) {
-  
+@media only screen and (max-width: 600px) {
+  .container-contact {
+    &__images {
+      height: 40px;
+      width: 40px;
+      max-width: 100%;
+      max-height: auto;
+    }
+  }  
 }
+
 
 
 

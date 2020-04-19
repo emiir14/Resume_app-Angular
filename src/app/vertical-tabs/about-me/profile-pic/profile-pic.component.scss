@@ -1,8 +1,11 @@
+img {
+  border: 1px solid var(--primary-color);
+  border-radius: 6em;
+}
+
 .grid figure {
   position: relative;
-  overflow: hidden;
   text-align: center;
-  cursor: pointer;
 }
 
 .grid figure img {
@@ -117,4 +120,10 @@ figure.effect-layla:hover img {
 figure.effect-layla img {
   height: auto;
   filter: var(--img-darkening);
+}
+
+@media (max-width: 1024px) {
+  figure figcaption {
+    display: none;
+  }
 }

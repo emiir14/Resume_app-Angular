@@ -9,10 +9,7 @@
   bottom: 0;
   right: 0;
   background: var(--background-color);
-}
-
-.border1 {
-  border-radius: 5%;
+  border-radius: 6em;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -34,6 +31,7 @@
   .nav-tabs {
     border-bottom: none;
     border-right: 3px solid rgb(37, 37, 37);
+
     display: flex;
   }
   .nav-tabs {
@@ -51,11 +49,12 @@
     border-color: transparent;
   }
   .nav-tabs .nav-link.active {
-    background: var(--background-color);
+    background: var(--primary-color);
     border-color: rgb(37, 37, 37);
     border-bottom-left-radius: 0.25rem;
     border-top-right-radius: 0;
-    margin-right: -1px;
+    border-right: 0;
+    border-radius: 6em;
   }
   .nav-tabs .nav-link.active:hover {
     background: var(--background-color);
@@ -79,5 +78,11 @@
   .tab-pane {
     display: block !important;
     opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    overflow: hidden;
   }
 }

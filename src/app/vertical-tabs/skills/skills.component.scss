@@ -15,10 +15,9 @@
   &__listItems {
     float: left;
   }
-  &__images {
-    max-width: 55px;
-    max-height: 55px;
-    padding-right: 5%;
-    padding-bottom: 8%;
-  }
+}
+
+img {
+  max-width: 55px;
+  max-height: 55px;
 }

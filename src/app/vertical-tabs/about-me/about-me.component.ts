@@ -6,12 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.scss'],
 })
 export class AboutMeComponent implements OnInit {
-  personalData = [
-    'Name: Emir Ale',
-    'Age: 28',
-    'City: Cordoba',
-    'Hotel: Trivago',
-  ];
+  personalData = ['Name: Emir Ale', 'Age: 28', 'City: Cordoba'];
 
   constructor() {}
 

@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #fff;
-  --background-color: #EBEBF0;
-  --background-color2: #FAFAFC;
+  --primary-color: #73dfe7;
+  --background-color: #ebebf0;
+  --background-color2: #fafafc;
   --text-color: #333;
   --text-shadow: 4px 4px 4px #aaa;
   --img-source: url(https://i.imgur.com/gEE0Mge.png);
@@ -11,23 +11,47 @@
 html,
 body {
   height: 100%;
-  background: var(--background-color2);
-  overflow-y: hidden;
+  overflow: hidden;
 }
 body {
   margin: 0;
-  font-family: "Baloo Thambi 2", cursive;
   color: var(--text-color);
+  font-family: "Baloo Thambi 2", cursive;
+  background: #ada996; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-shadow: var(--text-shadow);
 }
 
 @media only screen and (max-width: 600px) {
-  html, body {
+  html,
+  body {
     max-width: 400px;
-    font-size: 0.8em; 
+    font-size: 0.8em;
     overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 0.8em;
   }
 }
