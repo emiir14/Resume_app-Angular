@@ -6,6 +6,11 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ThemeService } from './theme.service';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+import { DataDbService } from './data-db.service';
+
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VerticalTabsComponent } from './vertical-tabs/vertical-tabs.component';
@@ -22,7 +27,8 @@ import { EmailFormComponent } from './vertical-tabs/contact/email-form/email-for
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule.forRoot([{ path: 'contact', component: EmailFormComponent }]),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
   ],
   declarations: [
     AppComponent,
@@ -34,6 +40,6 @@ import { EmailFormComponent } from './vertical-tabs/contact/email-form/email-for
     EmailFormComponent,
   ],
   bootstrap: [AppComponent],
-  providers: [ThemeService]
+  providers: [ThemeService, DataDbService],
 })
 export class AppModule {}
