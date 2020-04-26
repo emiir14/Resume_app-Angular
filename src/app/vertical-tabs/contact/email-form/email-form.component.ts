@@ -16,7 +16,7 @@ export class EmailFormComponent implements OnInit {
         Validators.minLength(5),
         Validators.pattern(this.emailPattern),
       ]),
-      name: new FormControl('', [Validators.required, Validators.minLength(5)]),
+      name: new FormControl('', [Validators.required, Validators.minLength(2)]),
       message: new FormControl('', [
         Validators.required,
         Validators.minLength(10),

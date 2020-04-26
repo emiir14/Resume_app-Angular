@@ -1,4 +1,4 @@
-<!-- <div class="container-contact__mainText">
+<div class="container-contact__mainText">
   <div class="col xl 12">
     <div class="container">
       <h3>{{ text }}</h3>
@@ -10,28 +10,40 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-12">
+    <div class="col-sm-6">
       <ul class="container-contact__lists">
         <li class="container-contact__listItems" *ngFor="let item of items">
-          <div id="{{ item.hover }}">
-            <a href="{{ item.url }}"
-              ><img class="container-contact__images" src="{{ item.image }}"
-            /></a>
-          </div>
-          <div id="{{ item.stuff }}">
-            <p>{{ item.text }}</p>
+          <div class="row container-contact__customBorder">
+            <div class="col-4">
+              <a href="{{ item.url }}">
+                <img class="container-contact__images" src="{{ item.image }}" />
+              </a>
+            </div>
+            <div class="col-8">
+              <a href="{{ item.url }}">
+                <p class="container-contact__capsuleP">{{ item.text }}</p>
+              </a>
+            </div>
           </div>
         </li>
       </ul>
     </div>
-  </div>
-  <div class="row">
-    <div class="container">
-      <p>Previous project: 
-        <a href="https://cv-emir-ale.herokuapp.com/">https://cv-emir-ale.herokuapp.com/</a>
-      </p>
+    <div class="col-sm-1">
+      <div class="container-contact__outer">
+        <div class="container-contact__inner"></div>
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <app-email-form></app-email-form>
     </div>
   </div>
-</div> -->
+</div>
 
-<app-email-form></app-email-form>
+<div class="container">
+  <p>
+    Previous project:
+    <a href="https://cv-emir-ale.herokuapp.com/"
+      >https://cv-emir-ale.herokuapp.com/</a
+    >
+  </p>
+</div>

@@ -3,7 +3,6 @@
   --background-color: #ebebf0;
   --background-color2: #fafafc;
   --text-color: #333;
-  --text-shadow: 4px 4px 4px #aaa;
   --img-source: url(https://i.imgur.com/gEE0Mge.png);
   --img-darkening: brightness(100%);
 }
@@ -26,12 +25,6 @@ body {
     #cecbc0
   );
   background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #cecbc0);
-}
-
-h1,
-h2,
-h3 {
-  text-shadow: var(--text-shadow);
 }
 
 @media only screen and (max-width: 600px) {
