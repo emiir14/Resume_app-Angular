@@ -1,0 +1,118 @@
+.form-container {
+  max-width: 450px;
+  padding: 14px;
+  margin: 10px auto;
+}
+
+h2 {
+  background: var(--secundary-color);
+  padding: 5px 0;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  margin: -14px -14px 14px -14px;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5em;
+}
+
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+  border-color: #f5c6cb;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.container-error-message {
+  padding: 3px;
+}
+
+.btn-send {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3%;
+  background: #43d1af;
+  border-bottom: 2px solid #30c29e;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  color: #fff;
+  font-size: 15px;
+  &:hover:not([disabled]) {
+    background: #2ebc99;
+  }
+}
+
+.customRow {
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5em;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  height: 30px;
+  padding: 10px 10px 10px 90px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 3px;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+}
+
+textarea {
+  height: auto;
+  min-height: 100px;
+  padding: 50px 10px 10px 10px;
+}
+
+input[type="text"] + label,
+input[type="password"] + label,
+textarea + label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 80px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--background-color);
+  background: var(--primary-color);
+  border-radius: 3px 0 0 3px;
+  transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
+  transform: translateZ(0) translateX(0);
+}
+
+textarea + label {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  padding-left: 10px;
+}
+
+textarea:focus {
+  padding-top: 10px;
+}
+
+input[type="text"]:focus + label,
+input[type="password"]:focus + label {
+  transform: translateZ(0) translateX(-100%);
+}
+
+textarea:focus + label {
+  transform: translateZ(0) translateY(-100%);
+}

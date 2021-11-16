@@ -6,6 +6,14 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ThemeService } from './theme.service';
 
+import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
+import { ShareIconsModule } from 'ngx-sharebuttons/icons';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+import { DataDbService } from './data-db.service';
+
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VerticalTabsComponent } from './vertical-tabs/vertical-tabs.component';
@@ -14,6 +22,7 @@ import { SkillsComponent } from './vertical-tabs/skills/skills.component';
 import { ContactComponent } from './vertical-tabs/contact/contact.component';
 import { ProfilePicComponent } from './vertical-tabs/about-me/profile-pic/profile-pic.component';
 import { EmailFormComponent } from './vertical-tabs/contact/email-form/email-form.component';
+import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
 
 @NgModule({
   imports: [
@@ -22,7 +31,12 @@ import { EmailFormComponent } from './vertical-tabs/contact/email-form/email-for
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule.forRoot([{ path: 'contact', component: EmailFormComponent }]),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    ShareButtonsModule.withConfig({
+      debug: true,
+    }),
+    ShareIconsModule.forRoot(),
   ],
   declarations: [
     AppComponent,
@@ -32,8 +46,9 @@ import { EmailFormComponent } from './vertical-tabs/contact/email-form/email-for
     ContactComponent,
     ProfilePicComponent,
     EmailFormComponent,
+    ToggleButtonComponent,
   ],
   bootstrap: [AppComponent],
-  providers: [ThemeService]
+  providers: [ThemeService, DataDbService],
 })
 export class AppModule {}

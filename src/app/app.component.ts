@@ -9,16 +9,7 @@ import { ThemeService } from './theme.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  darkTheme = new FormControl(false);
   title = 'resume-appv2';
 
-  constructor(private themeService: ThemeService) {
-    this.darkTheme.valueChanges.subscribe((value) => {
-      if (value) {
-        this.themeService.toggleDark();
-      } else {
-        this.themeService.toggleLight();
-      }
-    });
-  }
+  constructor() {}
 }
